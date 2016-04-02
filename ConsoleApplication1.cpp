@@ -196,20 +196,12 @@ void keyboard(unsigned char key, int x, int y){
 		display();
 	}
 }
+
+
 int _tmain(int argc, _TCHAR* argv[])
 {
-	
-	
-	glutInit(&argc, (char**)argv);
-	glutInitWindowPosition(200, 100);
-	glutInitWindowSize(700, 500);
-	glutCreateWindow("画图：‘1’.圆，‘2’.方，‘0’.移动，‘-’.继续绘制，‘[’保存，‘]’打开");
-	glutDisplayFunc(display);
-	glutMouseFunc(mouseCallBack);
-	glutMotionFunc(mouseMoveCB);
-	glutKeyboardFunc(keyboard);
-	glutMainLoop();
-	
+
+	new DrawView(argc, argv,mouseCallBack,mouseMoveCB,display,keyboard);
 
 	return 0;
 }
