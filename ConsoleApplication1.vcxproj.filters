@@ -54,6 +54,9 @@
     <ClInclude Include="FileUtils.h">
       <Filter>头文件\fileutils</Filter>
     </ClInclude>
+    <ClInclude Include="ViewAction.h">
+      <Filter>头文件\drawview</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
